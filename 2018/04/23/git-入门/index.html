@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="linux 命令乍一看不好记，实际它大多都是该命令含义的英文单词缩写。所以，知道命令的含义及其英文单词，那么记起命令来也就比较容易。比如像下面这些基础命令：    命令 全写 缩写     创建目录 make directory mkdir   删除 remove rm   移动 / 重命名 move mv   复制 copy cp   列出 list ls   改变目录 change direc">
+<meta name="description" content="git  配置git git config –global user.name 你的英文名 git config –global user.email 你的邮箱等  使用git使用 git 进行版本管理，有多种形式，比如：  只在本地进行版本管理 将本地仓库上传到远程仓库 下载远程仓库  下面对最基础的本地git使用进行介绍：  git init 初始化 git 仓库，这会在仓库目录创建一个名叫">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 基础命令学习">
-<meta property="og:url" content="http://yoursite.com/2018/04/23/Linux-基础命令学习/index.html">
+<meta property="og:title" content="git 入门">
+<meta property="og:url" content="http://yoursite.com/2018/04/23/git-入门/index.html">
 <meta property="og:site_name" content="vera_blog">
-<meta property="og:description" content="linux 命令乍一看不好记，实际它大多都是该命令含义的英文单词缩写。所以，知道命令的含义及其英文单词，那么记起命令来也就比较容易。比如像下面这些基础命令：    命令 全写 缩写     创建目录 make directory mkdir   删除 remove rm   移动 / 重命名 move mv   复制 copy cp   列出 list ls   改变目录 change direc">
+<meta property="og:description" content="git  配置git git config –global user.name 你的英文名 git config –global user.email 你的邮箱等  使用git使用 git 进行版本管理，有多种形式，比如：  只在本地进行版本管理 将本地仓库上传到远程仓库 下载远程仓库  下面对最基础的本地git使用进行介绍：  git init 初始化 git 仓库，这会在仓库目录创建一个名叫">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://github.com/verajian/verajian.github.io/blob/master/images/20180423-1.png?raw=true">
-<meta property="og:updated_time" content="2018-04-23T09:19:21.154Z">
+<meta property="og:updated_time" content="2018-04-23T10:02:48.999Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux 基础命令学习">
-<meta name="twitter:description" content="linux 命令乍一看不好记，实际它大多都是该命令含义的英文单词缩写。所以，知道命令的含义及其英文单词，那么记起命令来也就比较容易。比如像下面这些基础命令：    命令 全写 缩写     创建目录 make directory mkdir   删除 remove rm   移动 / 重命名 move mv   复制 copy cp   列出 list ls   改变目录 change direc">
-<meta name="twitter:image" content="https://github.com/verajian/verajian.github.io/blob/master/images/20180423-1.png?raw=true">
+<meta name="twitter:title" content="git 入门">
+<meta name="twitter:description" content="git  配置git git config –global user.name 你的英文名 git config –global user.email 你的邮箱等  使用git使用 git 进行版本管理，有多种形式，比如：  只在本地进行版本管理 将本地仓库上传到远程仓库 下载远程仓库  下面对最基础的本地git使用进行介绍：  git init 初始化 git 仓库，这会在仓库目录创建一个名叫">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/23/Linux-基础命令学习/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/23/git-入门/"/>
 
 
 
 
 
-  <title>Linux 基础命令学习 | vera_blog</title>
+  <title>git 入门 | vera_blog</title>
   
 
 
@@ -234,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/23/Linux-基础命令学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/23/git-入门/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Vera Jian">
@@ -251,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux 基础命令学习</h1>
+          <h1 class="post-title" itemprop="name headline">git 入门</h1>
         
 
         <div class="post-meta">
@@ -263,7 +261,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-23T15:32:16+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-23T17:22:09+08:00">
                 2018-04-23
               </time>
             
@@ -301,60 +299,21 @@
       
 
       
-        <p>linux 命令乍一看不好记，实际它大多都是该命令含义的英文单词缩写。所以，知道命令的含义及其英文单词，那么记起命令来也就比较容易。比如像下面这些基础命令：</p>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th style="text-align:right">全写</th>
-<th style="text-align:center">缩写</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>创建目录</td>
-<td style="text-align:right">make directory</td>
-<td style="text-align:center">mkdir</td>
-</tr>
-<tr>
-<td>删除</td>
-<td style="text-align:right">remove</td>
-<td style="text-align:center">rm</td>
-</tr>
-<tr>
-<td>移动 / 重命名</td>
-<td style="text-align:right">move</td>
-<td style="text-align:center">mv</td>
-</tr>
-<tr>
-<td>复制</td>
-<td style="text-align:right">copy</td>
-<td style="text-align:center">cp</td>
-</tr>
-<tr>
-<td>列出</td>
-<td style="text-align:right">list</td>
-<td style="text-align:center">ls</td>
-</tr>
-<tr>
-<td>改变目录</td>
-<td style="text-align:right">change directory</td>
-<td style="text-align:center">cd</td>
-</tr>
-</tbody>
-</table>
-<p>命令除了主体，为了精确描述，一般还会带一些选项和参数。比如：</p>
-<ol>
-<li><p>ls<br>ls 列出当前目录下的文件及目录<br>ls -a 列出当前目录下的所有文件及目录<br>ls -l 以详细信息列表的形式，列出当前目录下的文件及目录<br>ls -al 以详细信息列表的形式，列出当前目录下的所有文件及目录</p>
-</li>
-<li><p>cat<br>cat 查看文件的内容（执行命令后，文件的内容会输出到命令行的屏幕，以供查看）</p>
-</li>
-<li><p>mv<br>mv 移动文件位置；若在同一目录下，则是重命名</p>
-</li>
-<li><p>touch<br>touch 创建文件；如果文件已经存在，则是改变文件的创建时间</p>
-</li>
+        <p>git </p>
+<h1 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h1><ol>
+<li>git config –global user.name 你的英文名</li>
+<li>git config –global user.email 你的邮箱<br>等</li>
 </ol>
-<p>除了这些基础命令的选项参数，如果想学习其它命令及其选项参数的话，可以到 <a href="https://explainshell.com/" target="_blank" rel="noopener">explainshell.com</a> 搜索学习<br>比如这样：<br><img src="https://github.com/verajian/verajian.github.io/blob/master/images/20180423-1.png?raw=true" alt=""></p>
+<h1 id="使用git"><a href="#使用git" class="headerlink" title="使用git"></a>使用git</h1><p>使用 git 进行版本管理，有多种形式，比如：</p>
+<ol>
+<li>只在本地进行版本管理</li>
+<li>将本地仓库上传到远程仓库</li>
+<li>下载远程仓库</li>
+</ol>
+<p>下面对最基础的本地git使用进行介绍：</p>
+<ol>
+<li>git init 初始化 git 仓库，这会在仓库目录创建一个名叫 .git 的目录<br>i. git init demo 创建仓库同时初始化仓库<br>ii. mkdir demo; cd demo; git init; 先创建仓库，再初始化<br>eg:<br><img src="" alt=""></li>
+</ol>
 
       
     </div>
@@ -379,8 +338,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/23/第二篇博客测试/" rel="next" title="第二篇博客测试">
-                <i class="fa fa-chevron-left"></i> 第二篇博客测试
+              <a href="/2018/04/23/Linux-基础命令学习/" rel="next" title="Linux 基础命令学习">
+                <i class="fa fa-chevron-left"></i> Linux 基础命令学习
               </a>
             
           </div>
@@ -388,10 +347,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/23/git-入门/" rel="prev" title="git 入门">
-                git 入门 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -443,8 +398,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -486,6 +450,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#配置git"><span class="nav-number">1.</span> <span class="nav-text">配置git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用git"><span class="nav-number">2.</span> <span class="nav-text">使用git</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
